@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:'Quicksand', sans-serif;
+}
+
+/*----------------HEADER------------*/
+/*Medidas Estandar de la pantalla: 1280MD*/
+
+
+header {
+    background-color: #9FC5F2;
+    padding: 20px 0; /*Relleno del header, para hacerlo mas gordito*/
+    /* width: 1000px por defecto!!!!*/
+}
+
+nav {
+    width: 1000px;
+    margin: 0 auto; /*para centrar el nav en ese espacio*/
+    display: flex; /*me pone todo al lado del otro*/
+    align-items: center; /*alineacion vertical*/
+    justify-content: space-between; /*para poner un espacio entre los elementos*/
+}
+
+nav ul {
+    display: flex; /*para poner la lista de enlaces a lo largo*/
+    list-style: none; /*para borrar puntitos*/
+    flex: 1;
+    justify-content: space-between;
+}
+
+nav h1 {
+    flex: 2;
+}
+
+h1, nav a{
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+nav a {
+    font-size: 20px;
+}
+
+/*--------Barra San José----------*/
+
+.san-jose {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    margin: 0 auto; /* para alinearlo con la barra nav*/
+    justify-content: space-between;
+    padding: 20px 0; /*padding en la parte de arriba y abajo//tambien se puede utilizar margin top*/
+    border-bottom: 2px solid black; /*para aplicar la barra de color negro bajo el contenedor*/
+    font-size: large;
+}   
+
+/*-------------MAIN------------*/
+
+.semana {
+    width: 1000px;
+    margin: 0 auto; /* para centrar (igual al paso anterior)*/
+    display: flex;
+    gap: 5%; /*espacio entre los elementos*/
+    margin-top: 20px; /* espacio en la parte superior*/
+}
+
+.dia {
+    flex: 1; /* va a ser del mismo tamaño. abarca 1/4 del total de la fila*/
+/*    border: 1px solid black; solo para ver como quedaba*/
+    text-align: center;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 15px;
+    height: 300px;
+    font-size: 20px;
+
+}
+
+.dia img { /*selecciona la imagen del class dia*/
+    width: 160px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+
+.temperaturas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px; 
+}
+
+.max {
+    color: red;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.min {
+    color: blue;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+/*----------------FOOTER-----------*/
+
+footer {
+position: fixed; /* fija el elemento en un espacio ignorando el scroll*/
+bottom: 0; /* quiero que se sitúe en la parte de mas abajo* solo funciona con propiedades FIXED*/
+width: 100%;
+}
+
+.cookie {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: lightgray;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.cookie img{
+    width: 50px;
+    margin: 20px 12px;
+}
+
+button {
+    background-color: #9fc5f8;
+    color: black;
+    border: 2px solid black;
+    box-shadow: 1px 2px 0 1px black;
+    padding: 2px 20px;
+    font-weight: bold;
+    min-width: 100px;
+    white-space: nowrap;
+} 
+
+.text {
+    padding: 10px;
+}
